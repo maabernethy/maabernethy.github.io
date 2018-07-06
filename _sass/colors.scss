@@ -1,0 +1,52 @@
+$red-background-color: #9B3333;
+$purple-background-color: #484454;
+$grey-background-color: #959595;
+$green-background-color: #107E7D;
+$yellow-background-color: #E7B100;
+
+$grey-text-color: #E8E4E4;
+$white-text-color: #FFFFFF;
+
+body {
+  color: $grey-text-color;
+
+  .bright {
+    color: $white-text-color;
+  }
+
+  &#home {
+    background: $red-background-color;
+  }
+
+  &#about {
+    background: $purple-background-color;
+  }
+
+  &#projects {
+    background: $grey-background-color;
+  }
+
+  &#blog {
+    background: $green-background-color;
+  }
+
+  &#contact {
+    background: $yellow-background-color;
+  }
+}
+
+header {
+  span {
+    a {
+      color: $white-text-color;
+    }
+  }
+
+  .vl {
+    border-left: 1px solid $white-text-color;
+  }
+}
+
+footer {
+  color: $white-text-color;
+}
