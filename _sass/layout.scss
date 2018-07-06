@@ -53,10 +53,14 @@ footer {
 
   span {
     margin: 0 .2em 0 .2em;
+
+    img {
+      width: 30px;
+    }
   }
 
   span:first-child {
-    margin: 0 .2em 0 0;
+    margin: 0 1.2em 0 0;
   }
 }
 
