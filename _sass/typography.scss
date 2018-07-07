@@ -22,18 +22,28 @@ button, a {
   font-weight: normal;
 }
 
+body {
+  h1 {
+    font-size: 5em;
+  }
+
+  &#home {
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  &#blog {
+    p {
+      font-size: 1em;
+      margin-top: 0px;
+    }
+  }
+}
+
 header {
   a {
     font-size: .8em;
   }
 }
 
-body {
-  h1 {
-    font-size: 5em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-}
