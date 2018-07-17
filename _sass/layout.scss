@@ -38,6 +38,28 @@ body {
     width: auto;
     margin: 0px;
   }
+
+  &#about {
+    .plus {
+      font-size: 70px;
+    }
+
+    .category {
+      display: inline-block;
+    }
+
+    .description {
+      width: 60%;
+      padding-left: 10%;
+      display: inline-block;
+      font-size: 18px;
+    }
+
+    .row {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
 }
 
 header {
