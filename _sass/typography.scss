@@ -1,5 +1,7 @@
 // Google Fonts
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|PT+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700');
 
 // Font Variables
 $black-han-sans: 'Black Han Sans', sans-serif;
@@ -22,18 +24,39 @@ button, a {
   font-weight: normal;
 }
 
+body {
+  h1 {
+    font-size: 5em;
+  }
+
+  &#home {
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  &#blog {
+    p {
+      font-size: 1em;
+      margin-top: 0px;
+    }
+  }
+
+  &#contact {
+    .submit {
+      font-family: $raleway;
+      font-size: 25px;
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-family: $pt-sans;
+    }
+  }
+}
+
 header {
   a {
     font-size: .8em;
   }
 }
 
-body {
-  h1 {
-    font-size: 5em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-}

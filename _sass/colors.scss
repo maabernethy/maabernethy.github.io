@@ -32,6 +32,21 @@ body {
 
   &#contact {
     background: $yellow-background-color;
+
+    input:not(.submit), textarea {
+      background-color: $grey-text-color;
+      color: $purple-background-color;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: $grey-background-color;
+    }
+
+    .submit {
+      background-color: $yellow-background-color;
+      border: 1px solid $white-text-color;
+      color: $white-text-color;
+    }
   }
 }
 
