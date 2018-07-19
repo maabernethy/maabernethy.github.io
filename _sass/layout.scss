@@ -115,6 +115,26 @@ body {
       display: block;
     }
   }
+
+  &#projects {
+    .project_entry img {
+      float: left;
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      margin-right: 3%;
+    }
+
+    .project_entry div {
+      width: 80%;
+
+      h6 {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 2%;
+      }
+    }
+  }
 }
 
 header {
