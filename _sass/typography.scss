@@ -54,6 +54,15 @@ body {
   }
 }
 
+main {
+  display: flex;
+
+  .content {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 header {
   a {
     font-size: .8em;
