@@ -145,12 +145,18 @@ header {
     padding-bottom: 2%;
   }
 
-  span {
-    padding-right: 6px;
-  }
+  .nav {
+    overflow: auto;
+    white-space: nowrap;
 
-  span:not(:first-child) {
-    padding-left: 6px;
+    span {
+      display: inline-block;
+      padding-right: 6px;
+    }
+
+    span:not(:first-child) {
+      padding-left: 6px;
+    }
   }
 }
 
