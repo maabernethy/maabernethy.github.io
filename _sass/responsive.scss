@@ -21,6 +21,15 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       width: 70%;
     }
 
+    &#projects {
+      .project_entry {
+        img {
+           float: unset;
+           padding-left: unset;
+        }
+      }
+    }
+
     &#about {
       .plus {
         font-size: 60px;
@@ -43,8 +52,10 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   }
 }
 @media #{$medium-and-up} {
-  body .condense {
-    width: 80%;
+  body {
+    .condense {
+      width: 80%;
+    }
 
     &#about {
       .row {
@@ -61,11 +72,32 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   }
 }
 @media #{$medium-and-down} {
-  body .condense {
-    width: 70%;
+  body {
+    .condense {
+      width: 70%;
+    }
+
+    &#projects {
+      .project_entry div {
+        width: 95%;
+
+        h6 {
+          font-size: 17px;
+        }
+      }
+    }
   }
 }
 @media #{$large-and-up} {
 }
 @media #{$extra-large-and-up} {
+}
+@media #{$medium-only} {
+  body {
+    &#about {
+      .description {
+        width: 55%;
+      }
+    }
+  }
 }
