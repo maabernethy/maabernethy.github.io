@@ -20,11 +20,44 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     .condense {
       width: 70%;
     }
+
+    &#about {
+      .plus {
+        font-size: 60px;
+      }
+      .category {
+        display: block;
+      }
+
+      .description {
+        width: 90%;
+        padding-left: unset;
+        display: block;
+      }
+    }
+
+    .container .row {
+      margin-left: unset;
+      margin-right: unset;
+    }
   }
 }
 @media #{$medium-and-up} {
   body .condense {
     width: 80%;
+
+    &#about {
+      .row {
+        display: -webkit-box; 
+        display: -webkit-flex; 
+        display: -ms-flexbox;
+        display: flex; 
+        -webkit-box-align: center; 
+        -webkit-align-items: center; 
+        -ms-flex-align: center;
+        align-items: center; 
+      }
+    }
   }
 }
 @media #{$medium-and-down} {
