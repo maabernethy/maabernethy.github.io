@@ -21,6 +21,12 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       width: 70%;
     }
 
+    &#blog {
+      h4 {
+        font-size: 1.7em;
+      }
+    }
+
     &#projects {
       .project_entry {
         img {
