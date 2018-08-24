@@ -12,6 +12,16 @@ $small-and-down: "only screen and (max-width : #{$small-screen})" !default;
 $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 
+@media only screen and (max-width : 757px) {
+  body {
+    &#contact {
+      .message {
+        width: 93%;
+      }
+    }
+  }
+}
+
 @media #{$small-and-down} {
   body {
     h1 {
@@ -19,6 +29,16 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     }
     .condense {
       width: 70%;
+    }
+
+    &#contact {
+      .name, .email, .subject {
+         width: 91%;
+      }
+
+      .message {
+         width: 93%;
+      }
     }
 
     &#blog {
@@ -65,14 +85,14 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
     &#about {
       .row {
-        display: -webkit-box; 
-        display: -webkit-flex; 
+        display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; 
-        -webkit-box-align: center; 
-        -webkit-align-items: center; 
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
         -ms-flex-align: center;
-        align-items: center; 
+        align-items: center;
       }
     }
   }
@@ -107,3 +127,4 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     }
   }
 }
+
