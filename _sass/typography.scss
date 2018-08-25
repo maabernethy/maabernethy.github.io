@@ -1,12 +1,16 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500,600,700,800,900');
 
 // Font Variables
-$black-han-sans: 'Black Han Sans', sans-serif;
 $pt-sans: 'PT Sans', sans-serif;
 $raleway: 'Raleway', sans-serif;
+$nobile: 'Nobile', sans-serif;
+
+//backup big font?
+$work: 'Work Sans', sans-serif;
 
 // Styles
 body, p, span {
@@ -15,7 +19,7 @@ body, p, span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $black-han-sans;
+  font-family: $nobile;
   font-weight: bold;
 }
 
@@ -51,6 +55,15 @@ body {
     input::placeholder, textarea::placeholder {
       font-family: $pt-sans;
     }
+  }
+}
+
+main {
+  display: flex;
+
+  .content {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 

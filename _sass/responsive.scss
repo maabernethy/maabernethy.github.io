@@ -1,0 +1,125 @@
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+@media only screen and (max-width : 757px) {
+  body {
+    &#contact {
+      .message {
+        width: 93%;
+      }
+    }
+  }
+}
+
+@media #{$small-and-down} {
+  body {
+    h1 {
+      font-size: 3.5em;
+    }
+
+    &#contact {
+      .name, .email, .subject {
+         width: 91%;
+      }
+
+      .message {
+         width: 93%;
+      }
+    }
+
+    &#blog {
+      h4 {
+        font-size: 1.7em;
+      }
+    }
+
+    &#projects {
+      .project_entry {
+        img {
+           float: unset;
+           padding-left: unset;
+        }
+      }
+    }
+
+    &#about {
+      .plus {
+        font-size: 60px;
+      }
+      .category {
+        display: block;
+      }
+
+      .description {
+        width: 90%;
+        padding-left: unset;
+        display: block;
+      }
+    }
+
+    .container .row {
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+}
+@media #{$medium-and-up} {
+  body {
+    &#about {
+      .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media #{$medium-and-down} {
+  body {
+    .condense {
+      width: 70%;
+    }
+
+    &#projects {
+      .project_entry div {
+        width: 95%;
+
+        h6 {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+@media #{$large-and-up} {
+}
+@media #{$extra-large-and-up} {
+}
+@media #{$medium-only} {
+  body {
+    &#about {
+      .description {
+        width: 75%;
+      }
+      h2 {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

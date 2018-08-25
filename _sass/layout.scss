@@ -12,6 +12,11 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+
+    &.active {
+      text-decoration: underline;
+    }
+
   }
 
   h1, p {
@@ -31,6 +36,7 @@ body {
 
   .blog_entry {
     margin-bottom: 30px;
+    padding-right: 8%;
   }
 
   .container {
@@ -40,8 +46,13 @@ body {
   }
 
   &#about {
+    a {
+      text-decoration: underline;
+    }
+
     .plus {
-      font-size: 70px;
+      font-size: 60px;
+      line-height: 1;
     }
 
     .category {
@@ -49,10 +60,10 @@ body {
     }
 
     .description {
-      width: 60%;
-      padding-left: 10%;
+      width: 70%;
+      padding-left: 5%;
       display: inline-block;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .row {
@@ -115,6 +126,25 @@ body {
       display: block;
     }
   }
+
+  &#projects {
+    .project_entry img {
+      float: left;
+      width: 250px;
+      height: auto;
+      padding-left: 15px;
+      margin-right: 3%;
+    }
+
+    .project_entry div {
+      width: 80%;
+
+      h6 {
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 header {
@@ -125,12 +155,18 @@ header {
     padding-bottom: 2%;
   }
 
-  span {
-    padding-right: 6px;
-  }
+  .nav {
+    overflow: auto;
+    white-space: nowrap;
 
-  span:not(:first-child) {
-    padding-left: 6px;
+    span {
+      display: inline-block;
+      padding-right: 6px;
+    }
+
+    span:not(:first-child) {
+      padding-left: 6px;
+    }
   }
 }
 
