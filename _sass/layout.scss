@@ -12,6 +12,11 @@ body {
   a {
     text-decoration: none;
     color: inherit;
+
+    &.active {
+      text-decoration: underline;
+    }
+
   }
 
   h1, p {
@@ -41,8 +46,13 @@ body {
   }
 
   &#about {
+    a {
+      text-decoration: underline;
+    }
+
     .plus {
-      font-size: 70px;
+      font-size: 60px;
+      line-height: 1;
     }
 
     .category {
@@ -50,10 +60,10 @@ body {
     }
 
     .description {
-      width: 50%;
+      width: 70%;
       padding-left: 5%;
       display: inline-block;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .row {

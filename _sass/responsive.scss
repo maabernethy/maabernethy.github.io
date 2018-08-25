@@ -27,9 +27,6 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     h1 {
       font-size: 3.5em;
     }
-    .condense {
-      width: 70%;
-    }
 
     &#contact {
       .name, .email, .subject {
@@ -79,10 +76,6 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 }
 @media #{$medium-and-up} {
   body {
-    .condense {
-      width: 80%;
-    }
-
     &#about {
       .row {
         display: -webkit-box;
@@ -122,9 +115,11 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   body {
     &#about {
       .description {
-        width: 55%;
+        width: 75%;
+      }
+      h2 {
+        font-size: 3.2rem;
       }
     }
   }
 }
-
