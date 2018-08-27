@@ -17,7 +17,8 @@ layout: projects
 {% include project_entry.html
   title="ParallelAR: An augmented reality app and instructional approach
   for learning parallel programming scheduling concepts"
-  link="https://ieeexplore.ieee.org/abstract/document/8425430/"
+  link=" http://parallel.auckland.ac.nz/education/parallelar/index.html"
+  link2="https://ieeexplore.ieee.org/abstract/document/8425430/"
   description="Students tend to struggle with turning the abstract, higher level
   concepts of parallel programming into concrete mental models. Analogies
   are known to aid in this knowledge transfer, by providing an existing schema as the

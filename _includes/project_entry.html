@@ -3,7 +3,12 @@
     <img src="{{ include.path }}" />
     <div>
       <h6>{{ include.title }}</h6>
-      <p>{{ include.description }}</p>
+      <p>
+      {% if include.link2 %}
+        Recent <a class="link" href="{{include.link2}}" target="_blank"> publication</a>:
+      {% endif %}
+      {{ include.description }}
+      </p>
     </div>
   </a>
 </div>
