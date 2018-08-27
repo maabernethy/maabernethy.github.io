@@ -1,6 +1,5 @@
-title: Marin Abernethy
-description: >- # this means to ignore newlines until "baseurl:"
-  A personal website for me, Marin Abernethy.
+title: Marin Abernethy | Official
+description: A personal website for me, Marin Abernethy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  maabernethy
