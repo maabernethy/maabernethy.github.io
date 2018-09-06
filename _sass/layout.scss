@@ -10,13 +10,17 @@ body {
   flex-wrap: nowrap;
 
   a {
+    padding-bottom: 2px;
     text-decoration: none;
     color: inherit;
 
     &.active {
-      text-decoration: underline;
+      border-bottom: 1px solid;
     }
 
+    h4:hover {
+      border-bottom: 1px dotted;
+    }
   }
 
   h1, p {
@@ -46,8 +50,10 @@ body {
   }
 
   &#about {
-    a {
-      text-decoration: underline;
+    .description {
+      a {
+        border-bottom: 1px dotted;
+      }
     }
 
     .plus {
@@ -192,8 +198,13 @@ footer {
   span {
     margin: 0 .2em 0 .2em;
 
-    img {
-      width: 30px;
+    .logo {
+      float: left;
+
+      svg, img {
+        width: 30px;
+        height: auto;
+      }
     }
   }
 

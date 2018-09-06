@@ -10,6 +10,10 @@ $white-text-color: #FFFFFF;
 body {
   color: $grey-text-color;
 
+  a:hover {
+    color: $white-text-color;
+  }
+
   .bright {
     color: $white-text-color;
   }
@@ -20,6 +24,10 @@ body {
 
   &#about {
     background: $purple-background-color;
+
+    a:hover {
+      color: $white-text-color;
+    }
   }
 
   &#projects {
@@ -28,6 +36,10 @@ body {
 
   &#blog {
     background: $green-background-color;
+
+    a:hover {
+      color: $white-text-color;
+    }
   }
 
   &#contact {
@@ -44,6 +56,11 @@ body {
 
     .submit {
       background-color: $yellow-background-color;
+      border: 1px solid $grey-text-color;
+      color: $grey-text-color;
+    }
+
+    .submit:hover {
       border: 1px solid $white-text-color;
       color: $white-text-color;
     }
@@ -53,15 +70,30 @@ body {
 header {
   span {
     a {
-      color: $white-text-color;
+      color: $grey-text-color;
+    }
+    a:hover:not(.active) {
+      border-bottom: .5px $grey-text-color dotted;
     }
   }
 
+  .active {
+    color: $white-text-color;
+  }
+
   .vl {
-    border-left: 1px solid $white-text-color;
+    border-left: 1px solid $grey-text-color;
   }
 }
 
 footer {
-  color: $white-text-color;
+  color: $grey-text-color;
+
+  svg path {
+    stroke: $grey-text-color;
+  }
+
+  svg:hover path {
+    stroke: $white-text-color;
+  }
 }

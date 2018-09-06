@@ -1,22 +1,38 @@
- (function($){
-   $(function(){
+$(document).ready(function() {
+  // main menu toggle
+  $('img.svg').each(function(){
+    console.log('HELLLOOO');
+    var $img = jQuery(this);
+    var imgID = $img.attr('id');
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
 
-     $('.button-collapse').sideNav();
-     $('.parallax').parallax();
-     $('.collapsible').collapsible();
-     $('.carousel.carousel-slider').carousel({fullWidth: true});
-     $('.materialboxed').materialbox();
-     $('.scrollspy').scrollSpy();
-     $('.tap-target').tapTarget('open');
+    jQuery.get(imgURL, function(data) {
+      // Get the SVG tag, ignore the rest
+      var $svg = jQuery(data).find('svg');
 
-     if (localStorage.getItem('cookieconsent') === 'true') {
-       $('#cookies').hide()
-     }
+      // Add replaced image's ID to the new SVG
+      if(typeof imgID !== 'undefined') {
+        $svg = $svg.attr('id', imgID);
+      }
+      // Add replaced image's classes to the new SVG
+      if(typeof imgClass !== 'undefined') {
+        $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
 
-     jQuery('#cookies').on('click', function(event) {
-            localStorage.setItem('cookieconsent', 'true')
-            jQuery('#cookies').toggle('hide');
-       });
+      // Remove any invalid XML tags as per http://validator.w3.org
+      $svg = $svg.removeAttr('xmlns:a');
 
-   }); // end of document ready
- })(jQuery);
+      // Check if the viewport is set, else we gonna set it if we can.
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+
+      // Replace image with new SVG
+      $img.replaceWith($svg);
+
+    }, 'xml');
+
+  });
+
+}); // end of document ready
