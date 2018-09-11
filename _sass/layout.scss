@@ -18,9 +18,6 @@ body {
       border-bottom: 1px solid;
     }
 
-    h4:hover {
-      border-bottom: 1px dotted;
-    }
   }
 
   h1, p {
@@ -47,6 +44,13 @@ body {
     padding: 0 $right-margin 0 $left-margin;
     width: auto;
     margin: 0px;
+  }
+
+  &#blog {
+    .blog_entry a:hover {
+      border-bottom: 1px dotted;
+      padding-bottom: 0px;
+    }
   }
 
   &#about {
