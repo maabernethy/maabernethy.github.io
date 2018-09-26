@@ -202,8 +202,14 @@ footer {
   span {
     margin: 0 .2em 0 .2em;
 
+    .founding-member img {
+      width: 50px;
+      vertical-align: middle;
+    }
+
     .logo {
       float: left;
+      padding-top: 10px;
 
       svg, img {
         width: 30px;
