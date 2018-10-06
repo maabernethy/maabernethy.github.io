@@ -3,6 +3,12 @@ layout: blog
 ---
 
 {% include blog_entry.html
+  title="TIS: Find the smallest number that is not in the array"
+  date="October 6th, 2018"
+  link="https://medium.com/@maabernethy/tis-find-the-smallest-integer-that-is-not-in-the-array-80479cec15e4"
+%}
+
+{% include blog_entry.html
   title="TIL: Ecto supports a query inside another query"
   date="May 27th, 2016"
   link="https://dockyard.com/blog/2016/05/27/til-ecto-supports-query-inside-query"
