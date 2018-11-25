@@ -5,12 +5,10 @@ layout: projects
 {% include project_entry.html
   title="GoalKeeper: an Accountability service"
   link="https://www.facebook.com/GetGoalkeeper/"
-  description="My current side project (*working title*)! GoalKeeper enables you to invest in your
-  ambitions. You must bet on your goals, and get your friends to do the same.
-  Whoever reaches the goal, shares the pot. The current implementation is a
-  proof of concept, focusing on fitness goals. It is a web app built with the
-  MERN stack: MongoDB, Express, React, and Node.js. It enables one to invest
-  in their ambitions,"
+  description="Goalkeeper enables you to invest in your ambitions. You must bet on your goals,
+  and get your friends to do the same.  Whoever reaches the goal, shares the pot. I am currently
+  implementating the prototype, which is a proof of concept, focusing on fitness goals. It is a
+  web app built with the MERN stack: MongoDB, Express, React, and Node.js."
   path="/assets/images/goalkeeper.jpg"
 %}
 
