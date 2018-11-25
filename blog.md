@@ -3,9 +3,12 @@ layout: blog
 ---
 
 {% include blog_entry.html
-  title="TIS: Find the smallest number that is not in the array"
+  title="Today I Spaced: how to find the smallest number that is not in
+  the array"
   date="October 6th, 2018"
-  link="https://medium.com/@maabernethy/tis-find-the-smallest-integer-that-is-not-in-the-array-80479cec15e4"
+  link="https://medium.freecodecamp.org/tis-find-the-smallest-integer-that-is-not-in-the-array-80479cec15e4"
+  msg_link="https://medium.freecodecamp.org/tis-find-the-smallest-integer-that-is-not-in-the-array-80479cec15e4"
+  msg="Published in freeCodeCamp"
 %}
 
 {% include blog_entry.html
